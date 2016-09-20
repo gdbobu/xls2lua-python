@@ -281,4 +281,6 @@ def handler_path(excel_path, output_path):
 				handler_file(os.path.join(parent,filename), output_path)
 
 if __name__=="__main__":
-	handler_path("策划数值配置/", "Config/")
+	reload(sys)
+	sys.setdefaultencoding('utf-8')
+	handler_path("./excelData/", "./Config/")
